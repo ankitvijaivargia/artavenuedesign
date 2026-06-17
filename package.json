@@ -1,0 +1,20 @@
+{
+  "name": "art-avenue-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Art Avenue — luxury design house storefront. Built from the Claude Design handoff.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
