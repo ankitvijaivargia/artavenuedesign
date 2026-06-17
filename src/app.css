@@ -1,0 +1,19 @@
+/* Global frame — mirrors the prototype's index.html base styles. */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+
+@keyframes aaFade { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes aaRise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+.aa-route { animation: aaRise var(--dur-slow) var(--ease-luxe); }
+::selection { background: var(--accent-soft); color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
